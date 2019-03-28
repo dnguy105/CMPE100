@@ -1,0 +1,1505 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Oct 18 17:48:30 2018
+| Host         : BE104PC06 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file topMod_timing_summary_routed.rpt -rpx topMod_timing_summary_routed.rpx
+| Design       : topMod
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.15 2016-08-17
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 9 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     35.800        0.000                      0                   22        0.264        0.000                      0                   22        3.000        0.000                       0                    19  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                 ------------       ----------      --------------
+sys_clk_pin           {0.000 5.000}      10.000          100.000         
+  clk_out1_clk_wiz_0  {0.000 20.000}     40.000          25.000          
+  clkfbout_clk_wiz_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin                                                                                                                                                             3.000        0.000                       0                     1  
+  clk_out1_clk_wiz_0       35.800        0.000                      0                   22        0.264        0.000                      0                   22       19.500        0.000                       0                    15  
+  clkfbout_clk_wiz_0                                                                                                                                                    7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clkin }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out1_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       35.800ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.264ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             35.800ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_40/I_Q0/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        3.912ns  (logic 1.056ns (26.992%)  route 2.856ns (73.008%))
+  Logic Levels:           3  (LUT2=2 LUT4=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.488ns = ( 38.512 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.740     1.274    test/slowit/XLXI_38/CE
+    SLICE_X62Y28         LUT2 (Prop_lut2_I0_O)        0.150     1.424 r  test/slowit/XLXI_38/I_36_67/O
+                         net (fo=5, routed)           0.812     2.236    test/slowit/XLXI_39/CE
+    SLICE_X63Y27         LUT2 (Prop_lut2_I0_O)        0.326     2.562 r  test/slowit/XLXI_39/I_36_67/O
+                         net (fo=1, routed)           0.464     3.026    test/slowit/XLXI_40/I_Q0/CE
+    SLICE_X64Y28         FDCE                                         r  test/slowit/XLXI_40/I_Q0/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.507    38.512    test/slowit/XLXI_40/I_Q0/C
+    SLICE_X64Y28         FDCE                                         r  test/slowit/XLXI_40/I_Q0/I_36_35/C
+                         clock pessimism              0.578    39.089    
+                         clock uncertainty           -0.094    38.995    
+    SLICE_X64Y28         FDCE (Setup_fdce_C_CE)      -0.169    38.826    test/slowit/XLXI_40/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.826    
+                         arrival time                          -3.026    
+  -------------------------------------------------------------------
+                         slack                                 35.800    
+
+Slack (MET) :             36.629ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q0/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.844ns  (logic 0.730ns (25.669%)  route 2.114ns (74.331%))
+  Logic Levels:           2  (LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.490ns = ( 38.510 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.740     1.274    test/slowit/XLXI_38/CE
+    SLICE_X62Y28         LUT2 (Prop_lut2_I0_O)        0.150     1.424 r  test/slowit/XLXI_38/I_36_67/O
+                         net (fo=5, routed)           0.533     1.957    test/slowit/XLXI_39/I_Q0/CE
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.505    38.510    test/slowit/XLXI_39/I_Q0/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/C
+                         clock pessimism              0.578    39.087    
+                         clock uncertainty           -0.094    38.993    
+    SLICE_X63Y27         FDCE (Setup_fdce_C_CE)      -0.407    38.586    test/slowit/XLXI_39/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.586    
+                         arrival time                          -1.957    
+  -------------------------------------------------------------------
+                         slack                                 36.629    
+
+Slack (MET) :             36.629ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q1/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.844ns  (logic 0.730ns (25.669%)  route 2.114ns (74.331%))
+  Logic Levels:           2  (LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.490ns = ( 38.510 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.740     1.274    test/slowit/XLXI_38/CE
+    SLICE_X62Y28         LUT2 (Prop_lut2_I0_O)        0.150     1.424 r  test/slowit/XLXI_38/I_36_67/O
+                         net (fo=5, routed)           0.533     1.957    test/slowit/XLXI_39/I_Q1/CE
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q1/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.505    38.510    test/slowit/XLXI_39/I_Q1/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q1/I_36_35/C
+                         clock pessimism              0.578    39.087    
+                         clock uncertainty           -0.094    38.993    
+    SLICE_X63Y27         FDCE (Setup_fdce_C_CE)      -0.407    38.586    test/slowit/XLXI_39/I_Q1/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.586    
+                         arrival time                          -1.957    
+  -------------------------------------------------------------------
+                         slack                                 36.629    
+
+Slack (MET) :             36.818ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q2/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.655ns  (logic 0.730ns (27.500%)  route 1.925ns (72.500%))
+  Logic Levels:           2  (LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.490ns = ( 38.510 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.740     1.274    test/slowit/XLXI_38/CE
+    SLICE_X62Y28         LUT2 (Prop_lut2_I0_O)        0.150     1.424 r  test/slowit/XLXI_38/I_36_67/O
+                         net (fo=5, routed)           0.344     1.768    test/slowit/XLXI_39/I_Q2/CE
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.505    38.510    test/slowit/XLXI_39/I_Q2/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/C
+                         clock pessimism              0.578    39.087    
+                         clock uncertainty           -0.094    38.993    
+    SLICE_X62Y27         FDCE (Setup_fdce_C_CE)      -0.407    38.586    test/slowit/XLXI_39/I_Q2/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.586    
+                         arrival time                          -1.768    
+  -------------------------------------------------------------------
+                         slack                                 36.818    
+
+Slack (MET) :             36.818ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q3/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.655ns  (logic 0.730ns (27.500%)  route 1.925ns (72.500%))
+  Logic Levels:           2  (LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.490ns = ( 38.510 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.740     1.274    test/slowit/XLXI_38/CE
+    SLICE_X62Y28         LUT2 (Prop_lut2_I0_O)        0.150     1.424 r  test/slowit/XLXI_38/I_36_67/O
+                         net (fo=5, routed)           0.344     1.768    test/slowit/XLXI_39/I_Q3/CE
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q3/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.505    38.510    test/slowit/XLXI_39/I_Q3/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q3/I_36_35/C
+                         clock pessimism              0.578    39.087    
+                         clock uncertainty           -0.094    38.993    
+    SLICE_X62Y27         FDCE (Setup_fdce_C_CE)      -0.407    38.586    test/slowit/XLXI_39/I_Q3/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.586    
+                         arrival time                          -1.768    
+  -------------------------------------------------------------------
+                         slack                                 36.818    
+
+Slack (MET) :             37.449ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q3/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.228ns  (logic 0.580ns (26.033%)  route 1.648ns (73.967%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.488ns = ( 38.512 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.807     1.341    test/slowit/XLXI_38/I_Q3/CE
+    SLICE_X62Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q3/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.507    38.512    test/slowit/XLXI_38/I_Q3/C
+    SLICE_X62Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q3/I_36_35/C
+                         clock pessimism              0.578    39.089    
+                         clock uncertainty           -0.094    38.995    
+    SLICE_X62Y28         FDCE (Setup_fdce_C_CE)      -0.205    38.790    test/slowit/XLXI_38/I_Q3/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.790    
+                         arrival time                          -1.341    
+  -------------------------------------------------------------------
+                         slack                                 37.449    
+
+Slack (MET) :             37.631ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q0/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.045ns  (logic 0.580ns (28.356%)  route 1.465ns (71.644%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.488ns = ( 38.512 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.625     1.159    test/slowit/XLXI_38/I_Q0/CE
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q0/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.507    38.512    test/slowit/XLXI_38/I_Q0/C
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q0/I_36_35/C
+                         clock pessimism              0.578    39.089    
+                         clock uncertainty           -0.094    38.995    
+    SLICE_X63Y28         FDCE (Setup_fdce_C_CE)      -0.205    38.790    test/slowit/XLXI_38/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.790    
+                         arrival time                          -1.159    
+  -------------------------------------------------------------------
+                         slack                                 37.631    
+
+Slack (MET) :             37.631ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q1/I_36_35/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.045ns  (logic 0.580ns (28.356%)  route 1.465ns (71.644%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.488ns = ( 38.512 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.887ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.625    -0.887    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.456    -0.431 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.841     0.410    test/slowit/XLXI_37/I_Q0_n_0
+    SLICE_X63Y28         LUT4 (Prop_lut4_I3_O)        0.124     0.534 r  test/slowit/XLXI_37/I_36_31/O
+                         net (fo=5, routed)           0.625     1.159    test/slowit/XLXI_38/I_Q1/CE
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q1/I_36_35/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.507    38.512    test/slowit/XLXI_38/I_Q1/C
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q1/I_36_35/C
+                         clock pessimism              0.578    39.089    
+                         clock uncertainty           -0.094    38.995    
+    SLICE_X63Y28         FDCE (Setup_fdce_C_CE)      -0.205    38.790    test/slowit/XLXI_38/I_Q1/I_36_35
+  -------------------------------------------------------------------
+                         required time                         38.790    
+                         arrival time                          -1.159    
+  -------------------------------------------------------------------
+                         slack                                 37.631    
+
+Slack (MET) :             37.806ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_38/I_Q3/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q3/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.128ns  (logic 0.580ns (27.254%)  route 1.548ns (72.746%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.488ns = ( 38.512 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.888ns
+    Clock Pessimism Removal (CPR):    0.601ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.624    -0.888    test/slowit/XLXI_38/I_Q3/C
+    SLICE_X62Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q3/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y28         FDCE (Prop_fdce_C_Q)         0.456    -0.432 r  test/slowit/XLXI_38/I_Q3/I_36_35/Q
+                         net (fo=2, routed)           1.548     1.117    test/slowit/XLXI_38/I_Q3/Q
+    SLICE_X62Y28         LUT2 (Prop_lut2_I1_O)        0.124     1.241 r  test/slowit/XLXI_38/I_Q3/I_36_32/O
+                         net (fo=1, routed)           0.000     1.241    test/slowit/XLXI_38/I_Q3/TQ
+    SLICE_X62Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q3/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.507    38.512    test/slowit/XLXI_38/I_Q3/C
+    SLICE_X62Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q3/I_36_35/C
+                         clock pessimism              0.601    39.112    
+                         clock uncertainty           -0.094    39.018    
+    SLICE_X62Y28         FDCE (Setup_fdce_C_D)        0.029    39.047    test/slowit/XLXI_38/I_Q3/I_36_35
+  -------------------------------------------------------------------
+                         required time                         39.047    
+                         arrival time                          -1.241    
+  -------------------------------------------------------------------
+                         slack                                 37.806    
+
+Slack (MET) :             37.819ns  (required time - arrival time)
+  Source:                 test/slowit/XLXI_39/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q2/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_clk_wiz_0 rise@40.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        2.093ns  (logic 0.704ns (33.628%)  route 1.389ns (66.372%))
+  Logic Levels:           2  (LUT2=2)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.490ns = ( 38.510 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.891ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.094ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.621    -0.891    test/slowit/XLXI_39/I_Q0/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y27         FDCE (Prop_fdce_C_Q)         0.456    -0.435 r  test/slowit/XLXI_39/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.715     0.281    test/slowit/XLXI_39/I_Q0_n_0
+    SLICE_X62Y27         LUT2 (Prop_lut2_I1_O)        0.124     0.405 r  test/slowit/XLXI_39/I_36_33/O
+                         net (fo=1, routed)           0.674     1.079    test/slowit/XLXI_39/I_Q2/T
+    SLICE_X62Y27         LUT2 (Prop_lut2_I0_O)        0.124     1.203 r  test/slowit/XLXI_39/I_Q2/I_36_32/O
+                         net (fo=1, routed)           0.000     1.203    test/slowit/XLXI_39/I_Q2/TQ
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  clkin (IN)
+                         net (fo=0)                   0.000    40.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    37.005 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          1.505    38.510    test/slowit/XLXI_39/I_Q2/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/C
+                         clock pessimism              0.578    39.087    
+                         clock uncertainty           -0.094    38.993    
+    SLICE_X62Y27         FDCE (Setup_fdce_C_D)        0.029    39.022    test/slowit/XLXI_39/I_Q2/I_36_35
+  -------------------------------------------------------------------
+                         required time                         39.022    
+                         arrival time                          -1.203    
+  -------------------------------------------------------------------
+                         slack                                 37.819    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.264ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_37/I_Q3/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_37/I_Q3/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.356ns  (logic 0.186ns (52.212%)  route 0.170ns (47.788%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.835ns
+    Source Clock Delay      (SCD):    -0.595ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.586    -0.595    test/slowit/XLXI_37/I_Q3/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q3/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.141    -0.454 r  test/slowit/XLXI_37/I_Q3/I_36_35/Q
+                         net (fo=2, routed)           0.170    -0.284    test/slowit/XLXI_37/I_Q3/Q
+    SLICE_X63Y29         LUT2 (Prop_lut2_I1_O)        0.045    -0.239 r  test/slowit/XLXI_37/I_Q3/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.239    test/slowit/XLXI_37/I_Q3/TQ
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q3/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.855    -0.835    test/slowit/XLXI_37/I_Q3/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q3/I_36_35/C
+                         clock pessimism              0.239    -0.595    
+    SLICE_X63Y29         FDCE (Hold_fdce_C_D)         0.092    -0.503    test/slowit/XLXI_37/I_Q3/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.503    
+                         arrival time                          -0.239    
+  -------------------------------------------------------------------
+                         slack                                  0.264    
+
+Slack (MET) :             0.275ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_39/I_Q1/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q3/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.231ns (60.770%)  route 0.149ns (39.230%))
+  Logic Levels:           2  (LUT2=1 LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.837ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_39/I_Q1/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q1/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y27         FDCE (Prop_fdce_C_Q)         0.141    -0.455 r  test/slowit/XLXI_39/I_Q1/I_36_35/Q
+                         net (fo=4, routed)           0.091    -0.364    test/slowit/XLXI_39/I_Q1_n_0
+    SLICE_X62Y27         LUT3 (Prop_lut3_I1_O)        0.045    -0.319 r  test/slowit/XLXI_39/I_36_32/O
+                         net (fo=1, routed)           0.058    -0.261    test/slowit/XLXI_39/I_Q3/T
+    SLICE_X62Y27         LUT2 (Prop_lut2_I0_O)        0.045    -0.216 r  test/slowit/XLXI_39/I_Q3/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.216    test/slowit/XLXI_39/I_Q3/TQ
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q3/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.853    -0.837    test/slowit/XLXI_39/I_Q3/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q3/I_36_35/C
+                         clock pessimism              0.253    -0.583    
+    SLICE_X62Y27         FDCE (Hold_fdce_C_D)         0.092    -0.491    test/slowit/XLXI_39/I_Q3/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.491    
+                         arrival time                          -0.216    
+  -------------------------------------------------------------------
+                         slack                                  0.275    
+
+Slack (MET) :             0.280ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_38/I_Q2/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q2/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.371ns  (logic 0.186ns (50.171%)  route 0.185ns (49.829%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.835ns
+    Source Clock Delay      (SCD):    -0.595ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.586    -0.595    test/slowit/XLXI_38/I_Q2/C
+    SLICE_X62Y29         FDCE                                         r  test/slowit/XLXI_38/I_Q2/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y29         FDCE (Prop_fdce_C_Q)         0.141    -0.454 r  test/slowit/XLXI_38/I_Q2/I_36_35/Q
+                         net (fo=3, routed)           0.185    -0.270    test/slowit/XLXI_38/I_Q2/Q
+    SLICE_X62Y29         LUT2 (Prop_lut2_I1_O)        0.045    -0.225 r  test/slowit/XLXI_38/I_Q2/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.225    test/slowit/XLXI_38/I_Q2/TQ
+    SLICE_X62Y29         FDCE                                         r  test/slowit/XLXI_38/I_Q2/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.855    -0.835    test/slowit/XLXI_38/I_Q2/C
+    SLICE_X62Y29         FDCE                                         r  test/slowit/XLXI_38/I_Q2/I_36_35/C
+                         clock pessimism              0.239    -0.595    
+    SLICE_X62Y29         FDCE (Hold_fdce_C_D)         0.091    -0.504    test/slowit/XLXI_38/I_Q2/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.504    
+                         arrival time                          -0.225    
+  -------------------------------------------------------------------
+                         slack                                  0.280    
+
+Slack (MET) :             0.285ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_37/I_Q0/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.186ns (49.409%)  route 0.190ns (50.591%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.835ns
+    Source Clock Delay      (SCD):    -0.595ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.586    -0.595    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.141    -0.454 f  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.190    -0.264    test/slowit/XLXI_37/I_Q0/Q
+    SLICE_X63Y29         LUT1 (Prop_lut1_I0_O)        0.045    -0.219 r  test/slowit/XLXI_37/I_Q0/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.219    test/slowit/XLXI_37/I_Q0/TQ
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.855    -0.835    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+                         clock pessimism              0.239    -0.595    
+    SLICE_X63Y29         FDCE (Hold_fdce_C_D)         0.091    -0.504    test/slowit/XLXI_37/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.504    
+                         arrival time                          -0.219    
+  -------------------------------------------------------------------
+                         slack                                  0.285    
+
+Slack (MET) :             0.286ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_37/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_37/I_Q1/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.186ns (49.148%)  route 0.192ns (50.852%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.835ns
+    Source Clock Delay      (SCD):    -0.595ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.586    -0.595    test/slowit/XLXI_37/I_Q0/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y29         FDCE (Prop_fdce_C_Q)         0.141    -0.454 r  test/slowit/XLXI_37/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.192    -0.262    test/slowit/XLXI_37/I_Q1/Q0
+    SLICE_X63Y29         LUT2 (Prop_lut2_I0_O)        0.045    -0.217 r  test/slowit/XLXI_37/I_Q1/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.217    test/slowit/XLXI_37/I_Q1/TQ
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q1/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.855    -0.835    test/slowit/XLXI_37/I_Q1/C
+    SLICE_X63Y29         FDCE                                         r  test/slowit/XLXI_37/I_Q1/I_36_35/C
+                         clock pessimism              0.239    -0.595    
+    SLICE_X63Y29         FDCE (Hold_fdce_C_D)         0.092    -0.503    test/slowit/XLXI_37/I_Q1/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.503    
+                         arrival time                          -0.217    
+  -------------------------------------------------------------------
+                         slack                                  0.286    
+
+Slack (MET) :             0.289ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_40/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_40/I_Q0/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.409ns  (logic 0.209ns (51.146%)  route 0.200ns (48.854%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.836ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_40/I_Q0/C
+    SLICE_X64Y28         FDCE                                         r  test/slowit/XLXI_40/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y28         FDCE (Prop_fdce_C_Q)         0.164    -0.432 f  test/slowit/XLXI_40/I_Q0/I_36_35/Q
+                         net (fo=10, routed)          0.200    -0.233    test/slowit/XLXI_40/I_Q0/Q
+    SLICE_X64Y28         LUT1 (Prop_lut1_I0_O)        0.045    -0.188 r  test/slowit/XLXI_40/I_Q0/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.188    test/slowit/XLXI_40/I_Q0/TQ
+    SLICE_X64Y28         FDCE                                         r  test/slowit/XLXI_40/I_Q0/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.854    -0.836    test/slowit/XLXI_40/I_Q0/C
+    SLICE_X64Y28         FDCE                                         r  test/slowit/XLXI_40/I_Q0/I_36_35/C
+                         clock pessimism              0.239    -0.596    
+    SLICE_X64Y28         FDCE (Hold_fdce_C_D)         0.120    -0.476    test/slowit/XLXI_40/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.476    
+                         arrival time                          -0.188    
+  -------------------------------------------------------------------
+                         slack                                  0.289    
+
+Slack (MET) :             0.291ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_39/I_Q2/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q2/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.382ns  (logic 0.186ns (48.712%)  route 0.196ns (51.288%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.837ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.240ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_39/I_Q2/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y27         FDCE (Prop_fdce_C_Q)         0.141    -0.455 r  test/slowit/XLXI_39/I_Q2/I_36_35/Q
+                         net (fo=3, routed)           0.196    -0.260    test/slowit/XLXI_39/I_Q2/Q
+    SLICE_X62Y27         LUT2 (Prop_lut2_I1_O)        0.045    -0.215 r  test/slowit/XLXI_39/I_Q2/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.215    test/slowit/XLXI_39/I_Q2/TQ
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.853    -0.837    test/slowit/XLXI_39/I_Q2/C
+    SLICE_X62Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q2/I_36_35/C
+                         clock pessimism              0.240    -0.596    
+    SLICE_X62Y27         FDCE (Hold_fdce_C_D)         0.091    -0.505    test/slowit/XLXI_39/I_Q2/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.505    
+                         arrival time                          -0.215    
+  -------------------------------------------------------------------
+                         slack                                  0.291    
+
+Slack (MET) :             0.295ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_39/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q0/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.386ns  (logic 0.186ns (48.147%)  route 0.200ns (51.853%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.837ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.240ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_39/I_Q0/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y27         FDCE (Prop_fdce_C_Q)         0.141    -0.455 f  test/slowit/XLXI_39/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.200    -0.255    test/slowit/XLXI_39/I_Q0/Q
+    SLICE_X63Y27         LUT1 (Prop_lut1_I0_O)        0.045    -0.210 r  test/slowit/XLXI_39/I_Q0/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.210    test/slowit/XLXI_39/I_Q0/TQ
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.853    -0.837    test/slowit/XLXI_39/I_Q0/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/C
+                         clock pessimism              0.240    -0.596    
+    SLICE_X63Y27         FDCE (Hold_fdce_C_D)         0.091    -0.505    test/slowit/XLXI_39/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.505    
+                         arrival time                          -0.210    
+  -------------------------------------------------------------------
+                         slack                                  0.295    
+
+Slack (MET) :             0.296ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_38/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_38/I_Q0/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.387ns  (logic 0.186ns (48.122%)  route 0.201ns (51.878%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.836ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_38/I_Q0/C
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y28         FDCE (Prop_fdce_C_Q)         0.141    -0.455 f  test/slowit/XLXI_38/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.201    -0.255    test/slowit/XLXI_38/I_Q0/Q
+    SLICE_X63Y28         LUT1 (Prop_lut1_I0_O)        0.045    -0.210 r  test/slowit/XLXI_38/I_Q0/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.210    test/slowit/XLXI_38/I_Q0/TQ
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q0/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.854    -0.836    test/slowit/XLXI_38/I_Q0/C
+    SLICE_X63Y28         FDCE                                         r  test/slowit/XLXI_38/I_Q0/I_36_35/C
+                         clock pessimism              0.239    -0.596    
+    SLICE_X63Y28         FDCE (Hold_fdce_C_D)         0.091    -0.505    test/slowit/XLXI_38/I_Q0/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.505    
+                         arrival time                          -0.210    
+  -------------------------------------------------------------------
+                         slack                                  0.296    
+
+Slack (MET) :             0.296ns  (arrival time - required time)
+  Source:                 test/slowit/XLXI_39/I_Q0/I_36_35/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            test/slowit/XLXI_39/I_Q1/I_36_35/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.186ns (47.899%)  route 0.202ns (52.101%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.837ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.240ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.585    -0.596    test/slowit/XLXI_39/I_Q0/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q0/I_36_35/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y27         FDCE (Prop_fdce_C_Q)         0.141    -0.455 r  test/slowit/XLXI_39/I_Q0/I_36_35/Q
+                         net (fo=5, routed)           0.202    -0.253    test/slowit/XLXI_39/I_Q1/Q0
+    SLICE_X63Y27         LUT2 (Prop_lut2_I0_O)        0.045    -0.208 r  test/slowit/XLXI_39/I_Q1/I_36_32/O
+                         net (fo=1, routed)           0.000    -0.208    test/slowit/XLXI_39/I_Q1/TQ
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q1/I_36_35/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clkin (IN)
+                         net (fo=0)                   0.000     0.000    test/my_clk_inst/clkin
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  test/my_clk_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    test/my_clk_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    test/my_clk_inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  test/my_clk_inst/clkout1_buf/O
+                         net (fo=13, routed)          0.853    -0.837    test/slowit/XLXI_39/I_Q1/C
+    SLICE_X63Y27         FDCE                                         r  test/slowit/XLXI_39/I_Q1/I_36_35/C
+                         clock pessimism              0.240    -0.596    
+    SLICE_X63Y27         FDCE (Hold_fdce_C_D)         0.092    -0.504    test/slowit/XLXI_39/I_Q1/I_36_35
+  -------------------------------------------------------------------
+                         required time                          0.504    
+                         arrival time                          -0.208    
+  -------------------------------------------------------------------
+                         slack                                  0.296    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_0
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { test/my_clk_inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         40.000      37.845     BUFGCTRL_X0Y0    test/my_clk_inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         40.000      38.751     MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y29     test/slowit/XLXI_37/I_Q0/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y29     test/slowit/XLXI_37/I_Q1/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y29     test/slowit/XLXI_37/I_Q2/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y29     test/slowit/XLXI_37/I_Q3/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y28     test/slowit/XLXI_38/I_Q0/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X63Y28     test/slowit/XLXI_38/I_Q1/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X62Y29     test/slowit/XLXI_38/I_Q2/I_36_35/C
+Min Period        n/a     FDCE/C              n/a            1.000         40.000      39.000     SLICE_X62Y28     test/slowit/XLXI_38/I_Q3/I_36_35/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q0/I_36_35/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q0/I_36_35/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q1/I_36_35/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q1/I_36_35/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q2/I_36_35/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q2/I_36_35/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q3/I_36_35/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q3/I_36_35/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X62Y29     test/slowit/XLXI_38/I_Q2/I_36_35/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X62Y29     test/slowit/XLXI_38/I_Q2/I_36_35/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q0/I_36_35/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q0/I_36_35/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q1/I_36_35/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q1/I_36_35/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q2/I_36_35/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q2/I_36_35/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q3/I_36_35/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y29     test/slowit/XLXI_37/I_Q3/I_36_35/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y28     test/slowit/XLXI_38/I_Q0/I_36_35/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X63Y28     test/slowit/XLXI_38/I_Q0/I_36_35/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { test/my_clk_inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1    test/my_clk_inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y0  test/my_clk_inst/mmcm_adv_inst/CLKFBOUT
+
+
+
