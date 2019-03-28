@@ -11,12 +11,3 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/David/Documents/UCSC/CMPE100/Lab3/project_2/project_2.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/dnguy105/Desktop/Lab3/project_2' since last save.
-Scanning sources...
-Finished scanning sources
-WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/Users/David/Documents/UCSC/CMPE100/Lab3/project_2/project_2.cache/ip', nor could it be found using path 'C:/Users/dnguy105/Desktop/Lab3/project_2/project_2.cache/ip'.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 26 17:52:05 2018...
