@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Oct 12 18:59:02 2018
+# Process ID: 11308
+# Current directory: C:/Users/David/Documents/UCSC/CMPE100/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1356 C:\Users\David\Documents\UCSC\CMPE100\Lab1\Lab1.xpr
+# Log file: C:/Users/David/Documents/UCSC/CMPE100/Lab1/vivado.log
+# Journal file: C:/Users/David/Documents/UCSC/CMPE100/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dnguy105/Desktop/HelloWorld/Lab1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.cache/ip', nor could it be found using path 'C:/Users/dnguy105/Desktop/HelloWorld/Lab1/Lab1.cache/ip'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 800.309 ; gain = 156.910
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: AND
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:01:54 . Memory (MB): peak = 838.516 ; gain = 628.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AND' [C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.srcs/sources_1/new/AND.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AND' (1#1) [C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.srcs/sources_1/new/AND.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:01:55 . Memory (MB): peak = 838.895 ; gain = 629.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:56 . Memory (MB): peak = 838.895 ; gain = 629.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.srcs/constrs_1/imports/HelloWorld/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/David/Documents/UCSC/CMPE100/Lab1/Lab1.srcs/constrs_1/imports/HelloWorld/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:06 ; elapsed = 00:02:05 . Memory (MB): peak = 1100.809 ; gain = 890.969
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1100.809 ; gain = 280.148
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 12 19:44:30 2018...
