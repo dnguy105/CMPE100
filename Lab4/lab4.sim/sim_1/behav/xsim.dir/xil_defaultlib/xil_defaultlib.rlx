@@ -1,0 +1,18 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sim_1/imports/lab4/testTC.v,1541828191,verilog,,,,testTC,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/imports/lab4/lab4_clks.v,1541819887,verilog,,,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab4_clks,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/imports/new/countUD16L.v,1541819887,verilog,,,,countUD16L,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/imports/new/hex7seg.v,1541819887,verilog,,,,hex7seg,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/imports/new/m8_1e.v,1541819887,verilog,,,,m8_1e,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/RingCNT.v,1541819885,verilog,,,,RingCNT,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/Selector.v,1541827649,verilog,,,,Selector,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/countUD3L.v,1541819886,verilog,,,,countUD3L,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/countUD5L.v,1541819886,verilog,,,,countUD5L,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/edgeDect.v,1541819884,verilog,,,,edgeDect,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/m4_1.v,1541819886,verilog,,,,m4_1e,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/mux2_1.v,1541819886,verilog,,,,mux2_1,,,,,,,,
+C:/Users/David/Documents/UCSC/CMPE100/lab4/lab4.srcs/sources_1/new/topMod.v,1541828225,verilog,,,,topMod,,,,,,,,
