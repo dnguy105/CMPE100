@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 23 16:48:38 2018
+# Process ID: 21856
+# Current directory: C:/Users/David/Documents/UCSC/CMPE100/Lab6/Lab6.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/David/Documents/UCSC/CMPE100/Lab6/Lab6.sim/sim_1/behav/xsim.dir/topMod6sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/David/Documents/UCSC/CMPE100/Lab6/Lab6.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/David/Documents/UCSC/CMPE100/Lab6/Lab6.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/David/Documents/UCSC/CMPE100/Lab6/Lab6.sim/sim_1/behav/xsim.dir/topMod6sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 23 16:48:43 2018...
