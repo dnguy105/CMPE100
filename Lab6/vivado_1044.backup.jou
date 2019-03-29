@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Nov 15 14:09:54 2018
+# Process ID: 1044
+# Current directory: C:/Users/dnguy105/Desktop/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3948 C:\Users\dnguy105\Desktop\Lab6\Lab6.xpr
+# Log file: C:/Users/dnguy105/Desktop/Lab6/vivado.log
+# Journal file: C:/Users/dnguy105/Desktop/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dnguy105/Desktop/Lab6/Lab6.xpr
+launch_simulation
+source topMod6sim.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/topMod6sim/test/a9/Q}} 
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/topMod6sim/test/a1/Dw}} 
+add_wave {{/topMod6sim/test/a1/Up}} 
+add_wave {{/topMod6sim/test/a1/Q}} 
+restart
+run 10 us
+run 10 us
+relaunch_sim
+restart
+add_wave {{/topMod6sim/test/a1/a/Q}} 
+run 10 us
+run 10 us
+add_wave {{/topMod6sim/test/a1/a/Up}} {{/topMod6sim/test/a1/a/Dw}} 
+close_sim
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source topMod6sim.tcl
+add_wave {{/topMod6sim/test/a1/Q}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/dnguy105/Desktop/Lab6/Lab6.runs/impl_1/topMod.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/dnguy105/Desktop/Lab6/Lab6.runs/impl_1/topMod.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+relaunch_sim
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/dnguy105/Desktop/Lab6/Lab6.runs/impl_1/topMod.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+add_wave {{/topMod6sim/test/finalTcount}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source topMod6sim.tcl
+add_wave {{/topMod6sim/test/pick}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source topMod6sim.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+archive_project C:/Users/dnguy105/Desktop/Lab6.xpr.zip -temp_dir C:/Users/dnguy105/Desktop/Lab6/.Xil/Vivado-1044-BE104PC20 -force
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/dnguy105/Desktop/Lab6/Lab6.runs/impl_1/topMod.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+add_wave {{/topMod6sim/test/pick}} 
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/dnguy105/Desktop/Lab6/Lab6.runs/impl_1/topMod.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/Users/dnguy105/Desktop/Lab6new.xpr.zip -temp_dir C:/Users/dnguy105/Desktop/Lab6/.Xil/Vivado-1044-BE104PC20 -force
