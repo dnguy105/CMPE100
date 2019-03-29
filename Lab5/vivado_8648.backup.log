@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 16 02:09:46 2018
+# Process ID: 8648
+# Current directory: C:/Users/David/Documents/UCSC/CMPE100/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7152 C:\Users\David\Documents\UCSC\CMPE100\Lab5\Lab5.xpr
+# Log file: C:/Users/David/Documents/UCSC/CMPE100/Lab5/vivado.log
+# Journal file: C:/Users/David/Documents/UCSC/CMPE100/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Documents/UCSC/CMPE100/Lab5/Lab5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dnguy105/Desktop/Lab5/.Xil/Vivado-6536-BE104PC25/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 741.996 ; gain = 100.039
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 16 03:45:25 2018...

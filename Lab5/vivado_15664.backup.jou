@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 16 13:52:14 2018
+# Process ID: 15664
+# Current directory: C:/Users/David/Documents/UCSC/CMPE100/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15556 C:\Users\David\Documents\UCSC\CMPE100\Lab5\Lab5.xpr
+# Log file: C:/Users/David/Documents/UCSC/CMPE100/Lab5/vivado.log
+# Journal file: C:/Users/David/Documents/UCSC/CMPE100/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Documents/UCSC/CMPE100/Lab5/Lab5.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Time_Counter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top LED_Shifter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top rndNum [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top StateMachine [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopMod5 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+launch_simulation
+source topMod5sim.tcl
+run 50 us
+add_wave {{/topMod5sim/test/stat/Q}} 
+restart
+run 50 us
+run 50 us
+run 50 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simState [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source simState.tcl
+add_wave {{/simState/test/Q}} 
+run 50 us
+run 50 us
+restart
+run 50 us
+close_sim
+close_sim
